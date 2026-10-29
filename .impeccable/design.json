@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T15:36:00.000Z",
+  "title": "Design System: JM Ternos",
+  "extensions": {
+    "colorMeta": {
+      "leather": {
+        "role": "neutral",
+        "displayName": "Burnt Black Leather",
+        "canonical": "#140f0d",
+        "tonalRamp": ["#0a0807", "#140f0d", "#1f1714", "#2e2420", "#4a3c36", "#6e5c54", "#9a8a80", "#c9bfb2"]
+      },
+      "leather-lift": {
+        "role": "neutral",
+        "displayName": "Lifted Leather",
+        "canonical": "#1f1714",
+        "tonalRamp": ["#0e0b0a", "#140f0d", "#1f1714", "#2c221e", "#433530", "#65544c", "#8f7d73", "#b8a99e"]
+      },
+      "cordovan": {
+        "role": "primary",
+        "displayName": "Cordovan",
+        "canonical": "#6b2a28",
+        "tonalRamp": ["#2a1211", "#4f1d1c", "#6b2a28", "#843634", "#a04a47", "#bc6e6b", "#d4a09d", "#edd5d3"]
+      },
+      "cordovan-deep": {
+        "role": "primary",
+        "displayName": "Cordovan Deep",
+        "canonical": "#4f1d1c",
+        "tonalRamp": ["#1a0c0b", "#2f1211", "#4f1d1c", "#6b2a28", "#8a3c39", "#a85d5a", "#c99491", "#e8d0ce"]
+      },
+      "brass": {
+        "role": "secondary",
+        "displayName": "Brass",
+        "canonical": "#b8956c",
+        "tonalRamp": ["#3d3224", "#5c4a35", "#7a6348", "#9a7a52", "#b8956c", "#d4b489", "#e0c49a", "#f0e2cc"]
+      },
+      "brass-hot": {
+        "role": "secondary",
+        "displayName": "Brass Hot",
+        "canonical": "#d4b489",
+        "tonalRamp": ["#4a3b28", "#6b5638", "#8a6d48", "#b8956c", "#d4b489", "#e0c49a", "#ead4b4", "#f5ead8"]
+      },
+      "cloth": {
+        "role": "neutral",
+        "displayName": "Cleaning Cloth",
+        "canonical": "#e6dfd4",
+        "tonalRamp": ["#3d342e", "#4a4038", "#6e6358", "#9a8f82", "#c9bfb2", "#d9d1c6", "#e6dfd4", "#f3efe8"]
+      },
+      "cloth-dim": {
+        "role": "neutral",
+        "displayName": "Cloth Dim",
+        "canonical": "#c9bfb2",
+        "tonalRamp": ["#2e2824", "#4a4038", "#6e6358", "#94897c", "#c9bfb2", "#d9d1c6", "#e6dfd4", "#f2eee7"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink on Brass",
+        "canonical": "#140f0d",
+        "tonalRamp": ["#0a0807", "#140f0d", "#1f1714", "#2e2420", "#4a3c36", "#6e5c54", "#9a8a80", "#c9bfb2"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display / Tin-label",
+        "purpose": "Hero brand wordmark only at full clamp; same family carries headlines and CTAs."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles (Ocasiões, A loja, Visita); ~18ch max."
+      },
+      "title": {
+        "displayName": "Title / Quote",
+        "purpose": "Polish quote block and occasion list titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs and leads; Host Grotesk at 1.0625rem / 1.7."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Place line, nav, buttons, hours values, footer links."
+      }
+    },
+    "shadows": [
+      {
+        "name": "brass-metal",
+        "value": "0 1px 0 rgba(255, 236, 200, 0.35) inset, 0 8px 18px rgba(0, 0, 0, 0.28)",
+        "purpose": "Primary brass button metal sheen."
+      },
+      {
+        "name": "brass-chip",
+        "value": "0 1px 0 rgba(255, 236, 200, 0.3) inset, 0 4px 12px rgba(0, 0, 0, 0.25)",
+        "purpose": "Compact top-bar WhatsApp chip."
+      },
+      {
+        "name": "map-settle",
+        "value": "0 12px 40px rgba(0, 0, 0, 0.35)",
+        "purpose": "Settle the Maps iframe on leather-lift."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Shared entrance easing for rise and sheen."
+      },
+      {
+        "name": "rise",
+        "value": "0.95s cubic-bezier(0.16, 1, 0.3, 1) both; from opacity 0, translateY(0.85rem), blur(4px)",
+        "purpose": "Staggered hero copy entrance (place → brand → lead → actions)."
+      },
+      {
+        "name": "sheen",
+        "value": "1.4s cubic-bezier(0.16, 1, 0.3, 1) both; brass diagonal highlight slides in",
+        "purpose": "One-shot polish flash across the leather plate."
+      },
+      {
+        "name": "state",
+        "value": "0.2s ease",
+        "purpose": "Button and nav color/border transitions."
+      }
+    ],
+    "breakpoints": [
+      { "name": "foot-row", "value": "700px" },
+      { "name": "nav", "value": "720px" },
+      { "name": "loja-split", "value": "860px" },
+      { "name": "visita-split", "value": "900px" }
+    ],
+    "cssVariables": {
+      "--leather": "#140f0d",
+      "--leather-lift": "#1f1714",
+      "--cordovan": "#6b2a28",
+      "--cordovan-deep": "#4f1d1c",
+      "--brass": "#b8956c",
+      "--brass-hot": "#d4b489",
+      "--cloth": "#e6dfd4",
+      "--cloth-dim": "#c9bfb2",
+      "--ink": "#140f0d",
+      "--font-display": "\"Bricolage Grotesque\", system-ui, sans-serif",
+      "--font-body": "\"Host Grotesk\", system-ui, sans-serif",
+      "--max": "72rem",
+      "--ease": "cubic-bezier(0.16, 1, 0.3, 1)"
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Brass Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Metal CTA for WhatsApp and Maps — the only warm shine.",
+      "html": "<a class=\"ds-btn-brass\" href=\"#\">Falar no WhatsApp</a>",
+      "css": ".ds-btn-brass { display: inline-flex; align-items: center; justify-content: center; min-height: 2.9rem; padding: 0.7rem 1.3rem; font-family: var(--font-display, \"Bricolage Grotesque\", system-ui, sans-serif); font-size: 0.92rem; font-weight: 700; text-decoration: none; color: var(--ink, #140f0d); background: linear-gradient(180deg, var(--brass-hot, #d4b489) 0%, var(--brass, #b8956c) 48%, #9a7a52 100%); border: 1px solid #8a6d48; border-radius: 0; box-shadow: 0 1px 0 rgba(255, 236, 200, 0.35) inset, 0 8px 18px rgba(0, 0, 0, 0.28); transition: background 0.2s ease, border-color 0.2s ease; cursor: pointer; } .ds-btn-brass:hover { background: linear-gradient(180deg, #e0c49a 0%, var(--brass-hot, #d4b489) 50%, var(--brass, #b8956c) 100%); border-color: var(--brass, #b8956c); } .ds-btn-brass:focus-visible { outline: 2px solid var(--brass, #b8956c); outline-offset: 3px; }"
+    },
+    {
+      "name": "Cloth Outline Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary action on dark leather (Instagram).",
+      "html": "<a class=\"ds-btn-cloth\" href=\"#\">Ver no Instagram</a>",
+      "css": ".ds-btn-cloth { display: inline-flex; align-items: center; justify-content: center; min-height: 2.9rem; padding: 0.7rem 1.3rem; font-family: var(--font-display, \"Bricolage Grotesque\", system-ui, sans-serif); font-size: 0.92rem; font-weight: 700; text-decoration: none; color: var(--cloth, #e6dfd4); background: transparent; border: 1px solid rgba(230, 223, 212, 0.4); border-radius: 0; transition: border-color 0.2s ease; cursor: pointer; } .ds-btn-cloth:hover { border-color: var(--cloth, #e6dfd4); } .ds-btn-cloth:focus-visible { outline: 2px solid var(--brass, #b8956c); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Tertiary outline for phone beside Maps.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"tel:+5561981433065\">(61) 98143-3065</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; min-height: 2.9rem; padding: 0.7rem 1.3rem; font-family: var(--font-display, \"Bricolage Grotesque\", system-ui, sans-serif); font-size: 0.92rem; font-weight: 700; text-decoration: none; color: var(--cloth, #e6dfd4); background: transparent; border: 1px solid rgba(230, 223, 212, 0.35); border-radius: 0; transition: border-color 0.2s ease; cursor: pointer; } .ds-btn-ghost:hover { border-color: var(--cloth, #e6dfd4); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--brass, #b8956c); outline-offset: 3px; }"
+    },
+    {
+      "name": "Top WhatsApp Chip",
+      "kind": "button",
+      "refersTo": "button-top-wa",
+      "description": "Compact brass chip in the fixed top bar.",
+      "html": "<a class=\"ds-top-wa\" href=\"#\">WhatsApp</a>",
+      "css": ".ds-top-wa { display: inline-flex; align-items: center; font-family: var(--font-display, \"Bricolage Grotesque\", system-ui, sans-serif); font-size: 0.85rem; font-weight: 700; text-decoration: none; color: var(--leather, #140f0d); background: linear-gradient(180deg, var(--brass-hot, #d4b489), var(--brass, #b8956c)); padding: 0.45rem 0.85rem; border-radius: 0; box-shadow: 0 1px 0 rgba(255, 236, 200, 0.3) inset, 0 4px 12px rgba(0, 0, 0, 0.25); } .ds-top-wa:hover { background: linear-gradient(180deg, #e0c49a, var(--brass-hot, #d4b489)); } .ds-top-wa:focus-visible { outline: 2px solid var(--brass, #b8956c); outline-offset: 3px; }"
+    },
+    {
+      "name": "Fixed Top Nav",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Leather glass bar: JM mark, section links, brass WA chip.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-top__mark\" href=\"#\">JM</a><nav class=\"ds-top__nav\" aria-label=\"Principal\"><a href=\"#\">Ocasiões</a><a href=\"#\">A loja</a><a href=\"#\">Visita</a></nav><a class=\"ds-top-wa\" href=\"#\">WhatsApp</a></header>",
+      "css": ".ds-top { display: flex; align-items: center; gap: 1.25rem; padding: 0.95rem 1.5rem; background: rgba(20, 15, 13, 0.92); backdrop-filter: blur(8px); color: var(--cloth, #e6dfd4); } .ds-top__mark { font-family: var(--font-display, \"Bricolage Grotesque\", system-ui, sans-serif); font-size: 1.35rem; font-weight: 800; letter-spacing: -0.03em; text-decoration: none; color: var(--cloth, #e6dfd4); } .ds-top__nav { display: flex; gap: 1.4rem; margin-left: auto; font-family: var(--font-display, \"Bricolage Grotesque\", system-ui, sans-serif); font-size: 0.9rem; font-weight: 500; } .ds-top__nav a { text-decoration: none; color: var(--cloth-dim, #c9bfb2); transition: color 0.2s ease; } .ds-top__nav a:hover { color: var(--cloth, #e6dfd4); } .ds-top .ds-top-wa { margin-left: 0; display: inline-flex; align-items: center; font-family: var(--font-display, \"Bricolage Grotesque\", system-ui, sans-serif); font-size: 0.85rem; font-weight: 700; text-decoration: none; color: var(--leather, #140f0d); background: linear-gradient(180deg, var(--brass-hot, #d4b489), var(--brass, #b8956c)); padding: 0.45rem 0.85rem; box-shadow: 0 1px 0 rgba(255, 236, 200, 0.3) inset, 0 4px 12px rgba(0, 0, 0, 0.25); } .ds-top .ds-top-wa:hover { background: linear-gradient(180deg, #e0c49a, var(--brass-hot, #d4b489)); }"
+    },
+    {
+      "name": "Polish Quote Block",
+      "kind": "custom",
+      "refersTo": "polish-block",
+      "description": "Cordovan field with tin-label quote and brass-hot meta.",
+      "html": "<aside class=\"ds-polish\"><p class=\"ds-polish__quote\">Vista-se com o seu próprio estilo e elegância.</p><p class=\"ds-polish__meta\">Atendimento personalizado em Samambaia Sul</p></aside>",
+      "css": ".ds-polish { display: grid; align-content: center; gap: 1rem; padding: 2.5rem; background: var(--cordovan, #6b2a28); color: var(--cloth, #e6dfd4); border-radius: 0; } .ds-polish__quote { margin: 0; font-family: var(--font-display, \"Bricolage Grotesque\", system-ui, sans-serif); font-size: 1.85rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.025em; } .ds-polish__meta { margin: 0; font-family: var(--font-display, \"Bricolage Grotesque\", system-ui, sans-serif); font-size: 0.88rem; font-weight: 500; color: var(--brass-hot, #d4b489); }"
+    },
+    {
+      "name": "Leather Copy Block",
+      "kind": "custom",
+      "refersTo": "leather-block",
+      "description": "Lifted-leather panel for store copy beside the polish field.",
+      "html": "<div class=\"ds-leather\"><h2 class=\"ds-leather__title\">Trabalho sério, atendimento humano</h2><p class=\"ds-leather__body\">Qualidade, conforto e orientação na combinação — sem pressa de shopping.</p></div>",
+      "css": ".ds-leather { padding: 2.75rem; background: var(--leather-lift, #1f1714); border-radius: 0; } .ds-leather__title { margin: 0 0 0.85rem; font-family: var(--font-display, \"Bricolage Grotesque\", system-ui, sans-serif); font-weight: 800; font-size: 2.25rem; line-height: 1.05; letter-spacing: -0.03em; color: var(--cloth, #e6dfd4); max-width: 18ch; } .ds-leather__body { margin: 0; font-family: var(--font-body, \"Host Grotesk\", system-ui, sans-serif); font-size: 1.0625rem; line-height: 1.7; color: var(--cloth-dim, #c9bfb2); max-width: 36rem; }"
+    },
+    {
+      "name": "Occasions List",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Fileted list on cloth-stone — not a card grid.",
+      "html": "<ul class=\"ds-ocasioes\"><li><h3>Casamento</h3><p>Ternos que acompanham a cerimônia do começo ao fim.</p></li><li><h3>Formatura</h3><p>Presença marcada na foto e no salão.</p></li></ul>",
+      "css": ".ds-ocasioes { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; background: #e6dfd4; color: #140f0d; } .ds-ocasioes li { padding: 1.4rem 1rem; border-top: 1px solid rgba(20, 15, 13, 0.14); } .ds-ocasioes li:last-child { border-bottom: 1px solid rgba(20, 15, 13, 0.14); } .ds-ocasioes h3 { margin: 0 0 0.35rem; font-family: var(--font-display, \"Bricolage Grotesque\", system-ui, sans-serif); font-size: 1.45rem; font-weight: 700; letter-spacing: -0.02em; color: var(--cordovan, #6b2a28); } .ds-ocasioes p { margin: 0; max-width: 40rem; color: #3d342e; font-family: var(--font-body, \"Host Grotesk\", system-ui, sans-serif); font-size: 1rem; line-height: 1.7; }"
+    },
+    {
+      "name": "Hours Row",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Tabular hours with brass hairline — display on values.",
+      "html": "<dl class=\"ds-hours\"><div><dt>Segunda a sexta</dt><dd>8h30 – 18h30</dd></div><div><dt>Sábado</dt><dd>8h30 – 16h</dd></div></dl>",
+      "css": ".ds-hours { display: grid; gap: 0.6rem; margin: 0; } .ds-hours > div { display: grid; grid-template-columns: 1fr auto; gap: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(184, 149, 108, 0.18); font-size: 0.95rem; font-variant-numeric: tabular-nums; } .ds-hours dt { margin: 0; color: var(--cloth-dim, #c9bfb2); font-family: var(--font-body, \"Host Grotesk\", system-ui, sans-serif); font-weight: 400; } .ds-hours dd { margin: 0; color: var(--cloth, #e6dfd4); font-family: var(--font-display, \"Bricolage Grotesque\", system-ui, sans-serif); font-weight: 600; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Ritual de polimento",
+    "overview": "A interface se comporta como o banco de polimento de um sapateiro: solo de couro preto-queimado, campos largos de cordovan, latão como único brilho quente, e um pano de limpeza sobre pedra clara quando o tom precisa respirar. Confiança local que brilha com trabalho — não com vitrine de shopping, não com hero navy+serif de alfaiataria genérica.\n\nA densidade é generosa e fechada: blocos sólidos de material, tipografia de rótulo de lata (Bricolage) contra corpo sóbrio (Host Grotesk), sem grade de cards iguais. Profundidade vem de troca tonal entre couro, cordovan e cloth, mais um véu fotográfico no hero — não de cartões flutuantes.",
+    "keyCharacteristics": [
+      "Full-bleed leather plate no primeiro viewport; marca como sinal heroico",
+      "Cordovan e leather como campos fechados; brass reservado a CTAs e destaques raros",
+      "Cantos afiados (0 radius) em toda a superfície",
+      "Lista com filetes, nunca mosaico de cards",
+      "Motion curto: rise + sheen de latão; respeita prefers-reduced-motion"
+    ],
+    "rules": [
+      {
+        "name": "The Brass Rarity Rule",
+        "body": "Latão aparece só onde há ação ou ênfase pontual (CTA, foco, place/meta). Não pintar seções inteiras de brass.",
+        "section": "colors"
+      },
+      {
+        "name": "The Cordovan Field Rule",
+        "body": "Cordovan é campo fechado ou título de lista — nunca fundo global da página (o solo é leather).",
+        "section": "colors"
+      },
+      {
+        "name": "The Tin-Label Rule",
+        "body": "Qualquer palavra de marca, nav, CTA ou dado operacional (horário, marca no rodapé) usa Bricolage. Host Grotesk fica no parágrafo.",
+        "section": "typography"
+      },
+      {
+        "name": "The Closed Block Rule",
+        "body": "Seções são placas de material contíguas. Não inventar grade uniforme de cards iguais.",
+        "section": "layout"
+      },
+      {
+        "name": "The Material Shadow Rule",
+        "body": "Sombra só para metal polido ou para pousar o mapa. Blocos de copy e listas ficam flat.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Sharp Plate Rule",
+        "body": "Sem radius. Placas e CTAs cortam reto como sola e fivela.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do manter o solo em leather e tratar cordovan/brass como campos e brilho pontual.",
+      "Do usar Bricolage em marca, títulos, CTAs e dados operacionais; Host Grotesk no parágrafo.",
+      "Do preferir listas filetadas e dípticos de material a grids de cards.",
+      "Do reservar motion a rise/sheen e desligar sob prefers-reduced-motion.",
+      "Do manter focus-visible em outline brass 2px / offset 3px."
+    ],
+    "donts": [
+      "Don't introduzir hero navy + serifa de alfaiataria genérica.",
+      "Don't arredondar cantos ou empilhar cards iguais com sombra de elevação.",
+      "Don't espalhar brass como fundo de seção — raridade é o ponto.",
+      "Don't inventar kickers/eyebrows de marketing, badges flutuantes ou collages no hero.",
+      "Don't trocar a placa full-bleed por imagem inset/card no primeiro viewport."
+    ]
+  }
+}
